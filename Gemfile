@@ -12,3 +12,4 @@ group :development do
   gem 'spring', '~> 1.7.2'
 end
 
+gem 'rubocop', '~> 0.42.0', require: false

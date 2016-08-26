@@ -4,8 +4,10 @@
 bundler_args: --jobs=2
 script:
 script:
-  - bundle exec rake db:create
+  - bundle exec rake db:migrate
   - bundle exec rake spec
+before_build:
+  - rubocop
 cache: bundler
 services:
   - postgresql
