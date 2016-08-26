@@ -4,7 +4,7 @@
 bundler_args: --jobs=2
 script:
 script:
-  - bundle exec rake db:setup
+  - bundle exec rake db:create
   - bundle exec rake spec
 cache: bundler
 services:
