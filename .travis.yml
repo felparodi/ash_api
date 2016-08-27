@@ -7,8 +7,7 @@ script:
 script:
   - bundle exec rake db:migrate
   - bundle exec rake spec
-before_script:
-  - rubocop
+  - bundle exec rubocop
 cache: bundler
 services:
   - postgresql
